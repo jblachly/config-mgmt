@@ -1,0 +1,14 @@
+[sshd]
+enabled = true
+port    = ssh
+logpath = %(sshd_log)s
+action = ipfilter
+
+[sshd-ddos]
+# This jail corresponds to the standard configuration in Fail2ban.
+# The mail-whois action send a notification e-mail with a whois request
+# in the body.
+enabled = true
+port    = ssh
+logpath = %(sshd_log)s
+action = ipfilter

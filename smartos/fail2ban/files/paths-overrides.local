@@ -1,0 +1,6 @@
+[DEFAULT]
+
+syslog_authpriv = /var/log/authlog
+
+sshd_log = %(syslog_authpriv)s
+
